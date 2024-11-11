@@ -1,7 +1,14 @@
-export default function SearchInput() {
+import VisuallyHidden from "../VisuallyHidden";
+import Icon from "../Icon";
+
+export default function SearchInput({ label, ...delegated }) {
   return (
     <label>
-      <input type="text" />
+      <VisuallyHidden>Search</VisuallyHidden>
+      <input
+        {...delegated}
+        placeholder="Search"
+      />
     </label>
   );
 }
