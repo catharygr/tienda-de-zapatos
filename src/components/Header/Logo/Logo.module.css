@@ -1,0 +1,9 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
