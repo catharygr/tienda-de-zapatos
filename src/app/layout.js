@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 
 const monaSanzFont = localFont({
-  src: "./assets/Mona-Sans.woff2",
+  src: "../../public/assets/Mona-Sans.woff2",
   display: "fallback",
 });
 
