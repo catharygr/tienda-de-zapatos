@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import Header from "../components/Header/Header";
+import "./globals.css";
 
 const monaSanzFont = localFont({
   src: "../../public/assets/Mona-Sans.woff2",
