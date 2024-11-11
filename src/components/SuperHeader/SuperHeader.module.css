@@ -1,0 +1,9 @@
+.marketingMessage {
+  color: hsl(190deg, 5%, 80%);
+}
+
+.wrapper {
+  font-size: 0.875rem;
+  color: hsl(190deg, 5%, 80%);
+  background-color: hsl(220deg, 3%, 20%);
+}
