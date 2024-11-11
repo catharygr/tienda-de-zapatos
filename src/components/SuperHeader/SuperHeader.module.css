@@ -27,3 +27,13 @@
     outline: none;
   }
 }
+
+.helpLink {
+  color: inherit;
+  text-decoration: none;
+  outline-offset: 2px;
+
+  &:not(:focus-visible) {
+    outline: none;
+  }
+}
