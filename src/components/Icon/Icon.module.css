@@ -1,0 +1,6 @@
+.wrapper {
+  & > svg {
+    display: block;
+    stroke-width: 1px;
+  }
+}
