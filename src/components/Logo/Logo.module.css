@@ -4,7 +4,10 @@
 }
 
 .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
   font-size: 1.5rem;
   font-weight: 800;
-  padding: 0 32px;
 }

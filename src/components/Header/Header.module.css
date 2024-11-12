@@ -1,5 +1,7 @@
 .enlaces {
+  display: flex;
   align-items: center;
+  gap: 2rem;
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -16,5 +18,9 @@
 }
 
 .separador {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin: 0 1rem;
 }
