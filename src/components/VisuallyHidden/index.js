@@ -1,2 +1,2 @@
-export * from "./UnstyledButton";
-export { default } from "./UnstyledButton";
+export * from "./VisuallyHidden";
+export { default } from "./VisuallyHidden";

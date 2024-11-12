@@ -4,6 +4,8 @@ import Logo from "../Logo";
 import SuperHeader from "../SuperHeader";
 
 export default function Header() {
+  // Nuestro sitio presenta dos encabezados visuales, pero deberían
+  // agruparse semánticamente como un solo encabezado.
   return (
     <header>
       <div className={styles.mainHeader}>
