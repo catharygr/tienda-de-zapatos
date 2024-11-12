@@ -11,7 +11,7 @@ export default function Header() {
       <div className={styles.mainHeader}>
         <SuperHeader />
         <Logo />
-        <nav className={styles.a}>
+        <nav className={styles.enlaces}>
           <Link href="/sale">Sale</Link>
           <Link href="/new">New&nbsp;Releases</Link>
           <Link href="/men">Men</Link>

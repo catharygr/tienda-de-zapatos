@@ -1,3 +1,9 @@
+.wrapperForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .label {
   position: relative;
 }
@@ -6,7 +12,7 @@
   border: none;
   background: transparent;
   border-bottom: 1px solid hsl(190deg, 5%, 80%);
-  padding-left: 24px;
+  padding-left: 2rem;
   font-size: 0.875rem;
   color: hsl(185deg, 5%, 95%);
   outline-offset: 4px;
@@ -24,6 +30,6 @@
   margin: auto;
   width: 16px;
   height: 16px;
-  stroke-width: 1;
-  font-size: 16px;
+  /* stroke-width: 1;
+  font-size: 5px; */
 }
