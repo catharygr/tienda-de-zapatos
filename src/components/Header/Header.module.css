@@ -1,7 +1,6 @@
 .enlaces {
   display: flex;
   align-items: center;
-  gap: 2rem;
   font-size: 1.125rem;
   text-transform: uppercase;
 }
