@@ -1,11 +1,13 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
 import Logo from "../Logo";
+import SuperHeader from "../SuperHeader";
 
 export default function Header() {
   return (
     <header>
       <div className={styles.mainHeader}>
+        <SuperHeader />
         <Logo />
         <nav className={styles.a}>
           <Link href="/sale">Sale</Link>
