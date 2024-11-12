@@ -1,0 +1,11 @@
+.wrapper {
+}
+
+.visibleLabel {
+  color: hsl(220deg, 5%, 40%);
+  margin-right: 1rem;
+}
+
+.selectWrapper {
+  position: relative;
+}
