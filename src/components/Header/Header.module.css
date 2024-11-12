@@ -1,4 +1,5 @@
 .enlaces {
+  align-items: center;
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -12,6 +13,8 @@
 
 .mainHeader {
   border-bottom: 1px solid hsl(190deg, 5%, 80%);
-  /* width: 100%;
-  box-sizing: border-box; */
+}
+
+.separador {
+  margin: 0 1rem;
 }

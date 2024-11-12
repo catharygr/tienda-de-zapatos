@@ -9,15 +9,17 @@ export default function Header() {
   return (
     <header className={styles.mainHeader}>
       <SuperHeader />
-      <Logo />
-      <nav className={styles.enlaces}>
-        <Link href="/sale">Sale</Link>
-        <Link href="/new">New&nbsp;Releases</Link>
-        <Link href="/men">Men</Link>
-        <Link href="/women">Women</Link>
-        <Link href="/kids">Kids</Link>
-        <Link href="/collections">Collections</Link>
-      </nav>
+      <div className={styles.separador}>
+        <Logo />
+        <nav className={styles.enlaces}>
+          <Link href="/sale">Sale</Link>
+          <Link href="/new">New&nbsp;Releases</Link>
+          <Link href="/men">Men</Link>
+          <Link href="/women">Women</Link>
+          <Link href="/kids">Kids</Link>
+          <Link href="/collections">Collections</Link>
+        </nav>
+      </div>
     </header>
   );
 }
