@@ -4,9 +4,13 @@
   gap: 2rem;
   font-size: 1.125rem;
   text-transform: uppercase;
+}
+
+.enlaces a {
   text-decoration: none;
   color: hsl(220deg, 3%, 20%);
   font-weight: 600;
+  padding: 0 2rem;
 
   &:first-of-type {
     color: hsl(240deg, 60%, 63%);
@@ -22,5 +26,5 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 0 1rem;
+  margin: 1rem;
 }
