@@ -11,6 +11,7 @@
 }
 
 .mainHeader {
-  padding: 0 32px;
   border-bottom: 1px solid hsl(190deg, 5%, 80%);
+  /* width: 100%;
+  box-sizing: border-box; */
 }
