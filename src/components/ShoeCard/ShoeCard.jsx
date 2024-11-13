@@ -41,8 +41,8 @@ export default function ShoeCard({
             className={styles.img}
             src={imageSrc}
             alt={name}
-            width={500}
-            height={500}
+            width={200}
+            height={200}
           />
         </div>
         <span className={styles.space}></span>

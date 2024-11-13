@@ -20,6 +20,7 @@ export default function ShoeIndex({ sortId, setSortId }) {
         <span className={styles.space}>Hola</span>
         <ShoeGrid />
       </div>
+      <div className={styles.leftColumn}></div>
     </div>
   );
 }

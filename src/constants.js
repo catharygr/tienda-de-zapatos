@@ -16,3 +16,36 @@ export const WEIGHTS = {
   medium: 600,
   bold: 800,
 };
+
+export const ESCRITORIO_LINK = [
+  {
+    slug: "sale",
+    label: "Sale",
+    href: "/",
+  },
+  {
+    slug: "new releases",
+    label: "New Releases",
+    href: "/new-releases",
+  },
+  {
+    slug: "men",
+    label: "Men",
+    href: "/men",
+  },
+  {
+    slug: "women",
+    label: "Women",
+    href: "/women",
+  },
+  {
+    slug: "kids",
+    label: "Kids",
+    href: "/kids",
+  },
+  {
+    slug: "collections",
+    label: "Collections",
+    href: "/collections",
+  },
+];
