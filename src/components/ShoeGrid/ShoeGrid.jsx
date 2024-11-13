@@ -1,4 +1,5 @@
 import SHOES from "@/data";
+import styles from "./ShoeGrid.module.css";
 
 import ShoeCard from "../ShoeCard";
 

@@ -1,5 +1,6 @@
 import styles from "./ShoeIndex.module.css";
 import Select from "../Select";
+import ShoeGrid from "../ShoeGrid";
 
 export default function ShoeIndex({ sortId, setSortId }) {
   return (
@@ -17,6 +18,7 @@ export default function ShoeIndex({ sortId, setSortId }) {
           </Select>
         </header>
         <span className={styles.space}>Hola</span>
+        <ShoeGrid />
       </div>
     </div>
   );

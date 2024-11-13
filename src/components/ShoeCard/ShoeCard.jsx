@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./ShoeCard.module.css";
 import Image from "next/image";
-import { formaPrice, Pluralize, isNewShoe, pluralize } from "../../utils";
+import { formatPrice, Pluralize, isNewShoe, pluralize } from "../../utils";
 
 export default function ShoeCard({
   slug,
@@ -41,12 +41,14 @@ export default function ShoeCard({
             className={styles.img}
             src={imageSrc}
             alt={name}
+            width={500}
+            height={500}
           />
         </div>
         <span className={styles.space}></span>
         <div className={styles.row}>
           <h3 className={styles.name}></h3>
-          <span className={styles.price}>{formaPrice(price)}</span>
+          <span className={styles.price}>{formatPrice(price)}</span>
         </div>
         <div className={styles.row}>
           <p className={styles.colorInfo}>{pluralize("Color", numOfColors)}</p>
