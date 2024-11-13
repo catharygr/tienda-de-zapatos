@@ -1,6 +1,8 @@
 import styles from "./ShoeIndex.module.css";
 import Select from "../Select";
 import ShoeGrid from "../ShoeGrid";
+import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
+import ShoeSidebar from "../ShoeSidebar";
 
 export default function ShoeIndex({ sortId, setSortId }) {
   return (
@@ -20,7 +22,15 @@ export default function ShoeIndex({ sortId, setSortId }) {
         <span className={styles.space}>Hola</span>
         <ShoeGrid />
       </div>
-      <div className={styles.leftColumn}></div>
+      <div className={styles.leftColumn}>
+        <Breadcrumbs>
+          <Breadcrumbs.Crumb href="/">Home</Breadcrumbs.Crumb>
+          <Breadcrumbs.Crumb href="/sale">Sale</Breadcrumbs.Crumb>
+          <Breadcrumbs.Crumb href="/sale/shoes">Shoes</Breadcrumbs.Crumb>
+        </Breadcrumbs>
+        <span className={styles.space}>Hola</span>
+        <ShoeSidebar />
+      </div>
     </div>
   );
 }

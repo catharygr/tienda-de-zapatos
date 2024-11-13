@@ -43,6 +43,7 @@ export default function ShoeCard({
             alt={name}
             width={200}
             height={200}
+            priority
           />
         </div>
         <span className={styles.space}></span>
