@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  font-size: 0.875rem;
+}
+
+.crumbWrapper {
+  &:not(:first-of-type) {
+    margin-left: 8px;
+
+    &::before {
+      content: "/";
+      margin-right: 8px;
+      color: hsl(190deg, 5%, 80%);
+    }
+  }
+}
+
+.crumbLink {
+  color: hsl(220deg, 5%, 40%);
+  text-decoration: none;
+
+  &:hover {
+    color: hsl(220deg, 3%, 20%);
+  }
+}
