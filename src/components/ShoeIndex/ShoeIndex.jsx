@@ -19,7 +19,7 @@ export default function ShoeIndex({ sortId, setSortId }) {
             <option value="price">Price</option>
           </Select>
         </header>
-        <span className={styles.space}>Hola</span>
+        <span className={styles.space}></span>
         <ShoeGrid />
       </div>
       <div className={styles.leftColumn}>
@@ -28,7 +28,7 @@ export default function ShoeIndex({ sortId, setSortId }) {
           <Breadcrumbs.Crumb href="/sale">Sale</Breadcrumbs.Crumb>
           <Breadcrumbs.Crumb href="/sale/shoes">Shoes</Breadcrumbs.Crumb>
         </Breadcrumbs>
-        <span className={styles.space}>Hola</span>
+        <span className={styles.space}></span>
         <ShoeSidebar />
       </div>
     </div>
