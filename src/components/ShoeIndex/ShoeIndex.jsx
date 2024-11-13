@@ -16,6 +16,7 @@ export default function ShoeIndex({ sortId, setSortId }) {
             <option value="price">Price</option>
           </Select>
         </header>
+        <span className={styles.space}>Hola</span>
       </div>
     </div>
   );
