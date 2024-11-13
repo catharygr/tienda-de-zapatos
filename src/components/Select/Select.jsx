@@ -1,10 +1,12 @@
 import styles from "./Select.module.css";
+import Icon from "../Icon/Icon";
+import React from "react";
 
 export default function Select({ label, value, children, ...delegated }) {
   const chilArray = React.Children.toArray(children);
-  const selectedChaild = chilArray.find((child) => child.props.value === value);
+  const selectedChild = chilArray.find((child) => child.props.value === value);
 
-  const displayValue = selectedChaild ? selectedChaild.props.children : null;
+  const displayedValue = selectedChild.props.children;
 
   return (
     <div>
@@ -17,6 +19,13 @@ export default function Select({ label, value, children, ...delegated }) {
           value={value}
           {...delegated}
         ></select>
+        <span>
+          {displayedValue}
+          <Icon
+            id="chevron-down"
+            className={styles.chevronIcon}
+          />
+        </span>
         {children}
       </div>
     </div>
