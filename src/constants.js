@@ -21,31 +21,31 @@ export const ESCRITORIO_LINK = [
   {
     slug: "sale",
     label: "Sale",
-    href: "/",
+    href: "sale",
   },
   {
     slug: "new releases",
     label: "New Releases",
-    href: "/new-releases",
+    href: "new-releases",
   },
   {
     slug: "men",
     label: "Men",
-    href: "/men",
+    href: "men",
   },
   {
     slug: "women",
     label: "Women",
-    href: "/women",
+    href: "women",
   },
   {
     slug: "kids",
     label: "Kids",
-    href: "/kids",
+    href: "kids",
   },
   {
     slug: "collections",
     label: "Collections",
-    href: "/collections",
+    href: "collections",
   },
 ];
