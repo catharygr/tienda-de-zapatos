@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import Logo from "../Logo";
 import SuperHeader from "../SuperHeader";
+import { ESCRITORIO_LINK } from "@/constants";
 
 export default function Header() {
   // Nuestro sitio presenta dos encabezados visuales, pero deberían
@@ -12,12 +13,14 @@ export default function Header() {
       <div className={styles.separador}>
         <Logo />
         <nav className={styles.enlaces}>
-          <Link href="/sale">Sale</Link>
-          <Link href="/new">New&nbsp;Releases</Link>
-          <Link href="/men">Men</Link>
-          <Link href="/women">Women</Link>
-          <Link href="/kids">Kids</Link>
-          <Link href="/collections">Collections</Link>
+          {ESCRITORIO_LINK.map((link) => (
+            <Link
+              key={link.slug}
+              href={`/${link.href}`}
+            >
+              {link.href}
+            </Link>
+          ))}
         </nav>
       </div>
     </header>

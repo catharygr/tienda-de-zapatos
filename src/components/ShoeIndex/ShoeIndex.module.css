@@ -1,24 +1,24 @@
 .wrapper {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
+  display: flex;
+  justify-content: space-between; /* Espacio entre las columnas */
+}
+
+.leftColumn {
+  width: 300px; /* Ajusta el ancho según lo que necesites */
+  order: 1; /* Asegura que la columna izquierda esté primero en el flujo visual */
 }
 
 .mainColumn {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
+  flex: 1; /* Toma el espacio disponible restante */
+  margin-left: 20px; /* Espacio entre las columnas, si es necesario */
+  order: 2; /* Asegura que la columna derecha aparezca después de la izquierda */
 }
+
 .header h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 .space {
-  display: block;
-  width: auto;
-  min-width: 1px;
-  height: auto;
-  min-height: 1px;
   font-size: 34px;
 }

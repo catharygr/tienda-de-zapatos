@@ -6,7 +6,7 @@ export default function Select({ label, value, children, ...delegated }) {
   const chilArray = React.Children.toArray(children);
   const selectedChild = chilArray.find((child) => child.props.value === value);
 
-  const displayedValue = selectedChild.props.children;
+  const displayedValue = selectedChild ? selectedChild.props.children : "";
 
   return (
     <div>
