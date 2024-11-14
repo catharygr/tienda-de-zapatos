@@ -1,17 +1,16 @@
 .wrapper {
   display: flex;
-  justify-content: space-between; /* Espacio entre las columnas */
+  justify-content: space-between;
 }
 
 .leftColumn {
-  width: 300px; /* Ajusta el ancho según lo que necesites */
-  order: 1; /* Asegura que la columna izquierda esté primero en el flujo visual */
+  width: 300px;
+  order: 1;
 }
 
 .mainColumn {
-  flex: 1; /* Toma el espacio disponible restante */
-  margin-left: 20px; /* Espacio entre las columnas, si es necesario */
-  order: 2; /* Asegura que la columna derecha aparezca después de la izquierda */
+  flex: 1;
+  order: 2;
 }
 
 .header h2 {
@@ -20,5 +19,5 @@
 }
 
 .space {
-  font-size: 34px;
+  /* font-size: 34px; */
 }
