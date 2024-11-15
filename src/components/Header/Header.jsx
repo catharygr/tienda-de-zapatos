@@ -5,7 +5,7 @@ import SuperHeader from "../SuperHeader";
 import { ESCRITORIO_LINK } from "@/constants";
 
 export default function Header() {
-  // Nuestro sitio presenta dos encabezados visuales, pero deberían
+  // El sitio presenta dos encabezados visuales, pero deberían
   // agruparse semánticamente como un solo encabezado.
   return (
     <header className={styles.mainHeader}>
