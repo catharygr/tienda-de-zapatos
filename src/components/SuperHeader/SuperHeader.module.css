@@ -10,6 +10,7 @@
   color: hsl(190deg, 5%, 80%);
   background-color: hsl(220deg, 3%, 20%);
   width: 100%;
+  height: 40px;
   box-sizing: border-box;
 }
 
