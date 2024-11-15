@@ -10,6 +10,7 @@
   color: hsl(220deg, 3%, 20%);
   font-weight: 600;
   padding: 0 2rem;
+  margin: auto;
 
   &:first-of-type {
     color: hsl(240deg, 60%, 63%);
@@ -23,7 +24,7 @@
 .separador {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  margin: 1rem;
+  justify-content: space-between;
+  margin: 2rem;
 }
