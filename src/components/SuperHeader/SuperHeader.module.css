@@ -1,5 +1,6 @@
 .marketingMessage {
   color: hsl(190deg, 5%, 80%);
+  margin-right: auto;
 }
 
 .wrapper {
@@ -11,6 +12,7 @@
   background-color: hsl(220deg, 3%, 20%);
   width: 100%;
   height: 40px;
+  gap: 1rem;
   box-sizing: border-box;
 }
 
@@ -38,7 +40,6 @@
   color: inherit;
   text-decoration: none;
   outline-offset: 2px;
-  margin-left: auto;
 
   &:not(:focus-visible) {
     outline: none;
