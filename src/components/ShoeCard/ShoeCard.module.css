@@ -22,11 +22,10 @@
 
 .space {
   display: block;
-
-  /* width: auto;
+  width: auto;
   min-width: 1px;
   height: auto;
-  min-height: 1px; */
+  min-height: 1px;
   font-size: 34px;
 }
 
