@@ -44,6 +44,7 @@ export default function ShoeCard({
             width={200}
             height={200}
             priority
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
         <span className={styles.space}></span>
@@ -51,7 +52,14 @@ export default function ShoeCard({
           <h3 className={styles.name}></h3>
           <span className={styles.price}>{formatPrice(price)}</span>
         </div>
-        <div className={styles.row}>
+        <div
+          style={{
+            color: variant === "on-sale" ? "hsl(220deg, 5%, 40%)" : undefined,
+            "text-decoration":
+              variant === "on-sale" ? "line-through" : undefined,
+          }}
+          className={styles.row}
+        >
           <p className={styles.colorInfo}>{pluralize("Color", numOfColors)}</p>
         </div>
       </article>

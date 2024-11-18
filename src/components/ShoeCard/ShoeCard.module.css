@@ -9,11 +9,13 @@
 }
 
 .imageWrapper {
+  display: flex;
   position: relative;
 }
 
 .img {
   width: 100%;
+  height: auto;
   border-radius: 16px 16px 4px 4px;
   object-fit: cover;
 }
