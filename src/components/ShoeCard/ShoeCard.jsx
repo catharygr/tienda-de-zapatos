@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./ShoeCard.module.css";
 import Image from "next/image";
-import { formatPrice, Pluralize, isNewShoe, pluralize } from "../../utils";
+import { formatPrice, isNewShoe, pluralize } from "../../utils";
 
 export default function ShoeCard({
   slug,
@@ -13,9 +13,9 @@ export default function ShoeCard({
   numOfColors,
 }) {
   // Hay 3 variantes posibles, basadas en las props:
-  //   - nuevo-lanzamiento
-  //   - en-oferta
-  //   - por-defecto
+  //   - new-release
+  //   - on-sale
+  //   - default
   //
   // Cualquier zapato lanzado en el último mes será considerado
   // `nuevo-lanzamiento`. Cualquier zapato con un `salePrice` será
@@ -49,7 +49,10 @@ export default function ShoeCard({
         <span className={styles.space}></span>
         <div className={styles.row}>
           <h3 className={styles.name}></h3>
-          <span className={styles.price}>{formatPrice(price)}</span>
+          <span
+            className={`${styles.spacer} ${styles["spacer-vertical"]}`}
+            style={{ "--spacer-width": "12px" }}
+          ></span>
         </div>
         <div className={styles.row}>
           <p className={styles.colorInfo}>{pluralize("Color", numOfColors)}</p>
