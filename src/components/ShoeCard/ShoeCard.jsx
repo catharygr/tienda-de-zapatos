@@ -49,10 +49,7 @@ export default function ShoeCard({
         <span className={styles.space}></span>
         <div className={styles.row}>
           <h3 className={styles.name}></h3>
-          <span
-            className={`${styles.spacer} ${styles["spacer-vertical"]}`}
-            style={{ "--spacer-width": "12px" }}
-          ></span>
+          <span className={styles.price}>{formatPrice(price)}</span>
         </div>
         <div className={styles.row}>
           <p className={styles.colorInfo}>{pluralize("Color", numOfColors)}</p>

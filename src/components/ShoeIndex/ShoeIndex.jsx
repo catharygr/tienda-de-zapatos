@@ -33,7 +33,7 @@ export default function ShoeIndex({ sortId, setSortId }) {
         </Breadcrumbs>
         <span
           className={`${styles.spacer} ${styles["spacer-vertical"]}`}
-          style={{ "--spacer-width": "32px" }}
+          style={{ "--spacer-width": "64px" }}
         ></span>
         <ShoeSidebar />
       </div>

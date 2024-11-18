@@ -28,13 +28,6 @@
   font-size: 34px;
 }
 
-.spacer-vertical {
-  width: 1px;
-  min-width: 1px;
-  height: var(--spacer-height, 1px);
-  min-height: var(--spacer-height, 1px);
-}
-
 .row {
   font-size: 1rem;
 }
