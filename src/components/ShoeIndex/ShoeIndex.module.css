@@ -1,22 +1,22 @@
 .wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  gap: 32px;
 }
 
 .leftColumn {
-  width: 300px;
-  order: 1;
+  flex-basis: 248px;
 }
 
 .mainColumn {
   flex: 1;
-  order: 2;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .header h2 {
@@ -29,8 +29,20 @@
   align-items: center;
 }
 
-/* .space {
+.spacer {
   display: block;
-  width: 4px;
-  height: 4px;
-} */
+}
+
+.spacer-horizontal {
+  width: var(--spacer-width, 1px);
+  min-width: var(--spacer-width, 1px);
+  height: 1px;
+  min-height: 1px;
+}
+
+.spacer-vertical {
+  width: 1px;
+  min-width: 1px;
+  height: var(--spacer-height, 1px);
+  min-height: var(--spacer-height, 1px);
+}
