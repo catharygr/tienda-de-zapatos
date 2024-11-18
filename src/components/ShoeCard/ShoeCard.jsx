@@ -3,6 +3,14 @@ import styles from "./ShoeCard.module.css";
 import Image from "next/image";
 import { formatPrice, isNewShoe, pluralize } from "../../utils";
 
+function SaleFlag({ children }) {
+  return <div className={styles.saleFlag}>{children}</div>;
+}
+
+function NewFlag({ children }) {
+  return <div className={styles.newFlag}>{children}</div>;
+}
+
 export default function ShoeCard({
   slug,
   name,
@@ -46,6 +54,8 @@ export default function ShoeCard({
             priority
             style={{ width: "auto", height: "auto" }}
           />
+          {variant === "on-sale" && <SaleFlag>Sale</SaleFlag>}
+          {variant === "new-release" && <NewFlag>Just released!</NewFlag>}
         </div>
         <span className={styles.space}></span>
         <div className={styles.row}>
