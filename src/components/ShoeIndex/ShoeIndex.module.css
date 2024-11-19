@@ -29,20 +29,4 @@
   align-items: center;
 }
 
-.spacer {
-  display: block;
-}
 
-.spacer-horizontal {
-  width: var(--spacer-width, 1px);
-  min-width: var(--spacer-width, 1px);
-  height: 1px;
-  min-height: 1px;
-}
-
-.spacer-vertical {
-  width: 1px;
-  min-width: 1px;
-  height: var(--spacer-height, 1px);
-  min-height: var(--spacer-height, 1px);
-}

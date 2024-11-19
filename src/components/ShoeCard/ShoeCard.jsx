@@ -61,7 +61,6 @@ export default function ShoeCard({
             <span className={styles.newFlag}>Just released!</span>
           )}
         </div>
-        <span className={styles.space}></span>
         <div className={styles.row}>
           <h3 className={styles.name}></h3>
           <span className={styles.price}>{formatPrice(price)}</span>

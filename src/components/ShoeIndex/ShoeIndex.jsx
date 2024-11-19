@@ -19,10 +19,6 @@ export default function ShoeIndex({ sortId, setSortId }) {
             <option value="price">Price</option>
           </Select>
         </header>
-        <span
-          className={`${styles.spacer} ${styles["spacer-horizontal"]}`}
-          style={{ "--spacer-width": "32px" }}
-        ></span>
         <ShoeGrid />
       </div>
       <div className={styles.leftColumn}>
@@ -31,10 +27,6 @@ export default function ShoeIndex({ sortId, setSortId }) {
           <Breadcrumbs.Crumb href="/sale">Sale</Breadcrumbs.Crumb>
           <Breadcrumbs.Crumb href="/sale/shoes">Shoes</Breadcrumbs.Crumb>
         </Breadcrumbs>
-        <span
-          className={`${styles.spacer} ${styles["spacer-vertical"]}`}
-          style={{ "--spacer-width": "64px" }}
-        ></span>
         <ShoeSidebar />
       </div>
     </div>
