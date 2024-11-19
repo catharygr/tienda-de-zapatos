@@ -54,8 +54,12 @@ export default function ShoeCard({
             priority
             style={{ width: "auto", height: "auto" }}
           />
-          {variant === "on-sale" && <SaleFlag>Sale</SaleFlag>}
-          {variant === "new-release" && <NewFlag>Just released!</NewFlag>}
+          {variant === "on-sale" && (
+            <span className={styles.saleFlag}>Sale</span>
+          )}
+          {variant === "new-release" && (
+            <span className={styles.newFlag}>Just released!</span>
+          )}
         </div>
         <span className={styles.space}></span>
         <div className={styles.row}>
