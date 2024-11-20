@@ -8,7 +8,7 @@ const icons = {
   "chevron-down": ChevronDown,
 };
 
-export default function Icon({ id, color, size, ...delegated }) {
+export default function Icon({ id, color, size, strokeWidth, ...delegated }) {
   const Component = icons[id];
 
   if (!Component) {
@@ -17,6 +17,7 @@ export default function Icon({ id, color, size, ...delegated }) {
 
   return (
     <div
+      strokeWidth={strokeWidth}
       className={styles.wrapper}
       {...delegated}
     >

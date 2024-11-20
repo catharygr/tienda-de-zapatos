@@ -1,6 +1,6 @@
 .wrapper {
   & > svg {
     display: inline-block;
-    stroke-width: 1;
+    stroke-width: 2px;
   }
 }

@@ -1,5 +1,5 @@
 import styles from "./Select.module.css";
-import Icon from "../Icon/Icon";
+import { ChevronDown } from "react-feather";
 import React from "react";
 
 export default function Select({ label, value, children, ...delegated }) {
@@ -19,10 +19,12 @@ export default function Select({ label, value, children, ...delegated }) {
           value={value}
           {...delegated}
         ></select>
-        <span>
+        <span className={styles.displayedBit}>
           {displayedValue}
-          <Icon
+          <ChevronDown
             id="chevron-down"
+            size={24}
+            strokeWidth={1.5}
             className={styles.chevronIcon}
           />
         </span>

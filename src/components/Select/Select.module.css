@@ -10,7 +10,6 @@
 
 .selectWrapper {
   position: relative;
-  width: 200px;
 }
 
 .nativeSelect {
@@ -26,12 +25,18 @@
 }
 
 .chevronIcon {
+  position: absolute;
   top: 0;
   right: 9px;
   bottom: 0;
   margin: auto;
-  width: 24px;
-  height: 24px;
-  font-size: 1rem;
-  stroke-width: 2;
+}
+
+.displayedBit {
+  display: block;
+  background: hsl(185deg, 5%, 95%);
+  font-weight: 600;
+  padding: 12px 42px 12px 16px;
+  border-radius: 8px;
+  pointer-events: none;
 }
