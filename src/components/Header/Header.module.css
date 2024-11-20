@@ -7,6 +7,7 @@
   border-bottom: 1px solid hsl(190deg, 5%, 80%);
   padding-bottom: 1rem;
 }
+
 .enlaces {
   padding: 0 2rem;
   display: flex;
@@ -27,4 +28,46 @@
   &:first-of-type {
     color: hsl(240deg, 60%, 63%);
   }
+}
+
+.hamburguesa {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburguesa div {
+  width: 25px;
+  height: 3px;
+  background-color: hsl(220deg, 3%, 20%);
+  margin: 4px 0;
+}
+
+@media (max-width: 68rem) {
+  .enlaces {
+    display: none;
+  }
+
+  .hamburguesa {
+    display: flex;
+  }
+
+  .menuDesplegable {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+  }
+
+  .menuDesplegable a {
+    padding: 1rem 0;
+  }
+}
+
+.menuDesplegable.open {
+  display: flex;
 }
