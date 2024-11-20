@@ -29,23 +29,3 @@
   justify-content: space-between;
   margin: 2rem;
 }
-
-/* .enlaces {
-  display: flex;
-  margin: 0 48px;
-  gap: 48px;
-  gap: max(calc(10vw - 60px), 32px);
-}
-
-.enlaces a {
-  font-size: 1.125rem;
-  line-height: 72px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: hsl(220deg, 3%, 20%);
-  font-weight: 600;
-
-  &:first-of-type {
-    color: hsl(240deg, 60%, 63%);
-  }
-} */
