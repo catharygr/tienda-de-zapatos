@@ -6,11 +6,11 @@ export default function Select({ label, value, children, ...delegated }) {
   const chilArray = React.Children.toArray(children);
   const selectedChild = chilArray.find((child) => child.props.value === value);
 
-  const displayedValue = selectedChild ? selectedChild.props.children : "";
+  const displayedValue = selectedChild.props.children;
 
   return (
-    <div>
-      <label className={styles.wrapper}>
+    <div className={styles.wrapper}>
+      <label>
         <span className={styles.visibleLabel}>{label}</span>
       </label>
       <div className={styles.selectWrapper}>
@@ -18,7 +18,9 @@ export default function Select({ label, value, children, ...delegated }) {
           className={styles.nativeSelect}
           value={value}
           {...delegated}
-        ></select>
+        >
+          {children}
+        </select>
         <span className={styles.displayedBit}>
           {displayedValue}
           <ChevronDown
@@ -28,7 +30,6 @@ export default function Select({ label, value, children, ...delegated }) {
             className={styles.chevronIcon}
           />
         </span>
-        {children}
       </div>
     </div>
   );
