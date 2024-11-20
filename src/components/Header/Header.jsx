@@ -8,9 +8,9 @@ export default function Header() {
   // El sitio presenta dos encabezados visuales, pero deberían
   // agruparse semánticamente como un solo encabezado.
   return (
-    <header className={styles.mainHeader}>
+    <header>
       <SuperHeader />
-      <div className={styles.separador}>
+      <div className={styles.mainHeader}>
         <Logo />
         <nav className={styles.enlaces}>
           {ESCRITORIO_LINK.map((link) => (
