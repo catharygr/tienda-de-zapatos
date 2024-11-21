@@ -33,15 +33,17 @@
 .enlaces {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.8rem;
   font-size: 1.125rem;
+  color: hsl(220deg, 3%, 20%);
+  font-weight: 600;
   margin: 0 auto;
 }
 
 .enlaces a {
   text-decoration: none;
   text-transform: uppercase;
-  color: hsl(220deg, 3%, 20%);
+  color: hsl(240deg, 60%, 63%);
 }
 
 .hamburguesa {
@@ -73,7 +75,7 @@
   animation-fill-mode: forwards;
 }
 
-/* .menuDesplegable  {
+.menuDesplegable a {
   color: white;
   text-decoration: none;
   padding: 1rem 0;
@@ -81,7 +83,7 @@
   text-transform: uppercase;
   font-size: 1.125rem;
   border-bottom: 1px solid hsl(220deg, 3%, 40%);
-} */
+}
 
 .menuDesplegable.abierto {
   display: flex;
