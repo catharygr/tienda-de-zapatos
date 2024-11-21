@@ -73,6 +73,16 @@
   animation-fill-mode: forwards;
 }
 
+/* .menuDesplegable  {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  border-bottom: 1px solid hsl(220deg, 3%, 40%);
+} */
+
 .menuDesplegable.abierto {
   display: flex;
   animation-name: abrirMenu;

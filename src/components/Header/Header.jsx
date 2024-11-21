@@ -6,6 +6,7 @@ import styles from "./Header.module.css";
 import Logo from "../Logo";
 import SuperHeader from "../SuperHeader";
 import { ESCRITORIO_LINK } from "@/constants";
+import { HAMBURGUESA_LINK } from "@/constants";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
 
     setTimeout(() => {
       setIsAnimating(false);
-    }, 500); 
+    }, 500);
   };
 
   return (
@@ -50,7 +51,7 @@ const Header = () => {
             isOpen ? styles.abierto : styles.cerrado
           }`}
         >
-          {ESCRITORIO_LINK.map((link) => (
+          {HAMBURGUESA_LINK.map((link) => (
             <Link
               key={link.slug}
               href={`/${link.href}`}
