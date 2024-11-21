@@ -37,18 +37,16 @@ export default function Header() {
           <div></div>
         </div>
       </div>
-      {isOpen && (
-        <nav className={styles.menuDesplegable}>
-          {ESCRITORIO_LINK.map((link) => (
-            <Link
-              key={link.slug}
-              href={`/${link.href}`}
-            >
-              {link.href}
-            </Link>
-          ))}
-        </nav>
-      )}
+      <nav className={`${styles.menuDesplegable} ${isOpen ? styles.open : ""}`}>
+        {ESCRITORIO_LINK.map((link) => (
+          <Link
+            key={link.slug}
+            href={`/${link.href}`}
+          >
+            {link.href}
+          </Link>
+        ))}
+      </nav>
     </header>
   );
 }
