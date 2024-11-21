@@ -9,7 +9,6 @@
 }
 
 .enlaces {
-  padding: 0 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -43,9 +42,27 @@
   margin: 4px 0;
 }
 
+.menuDesplegable {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 1rem;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .menuDesplegable.open {
   display: flex;
 }
+
+.menuDesplegable a {
+  padding: 1rem 0;
+}
+
 @media (max-width: 68rem) {
   .enlaces {
     display: none;
@@ -53,24 +70,5 @@
 
   .hamburguesa {
     display: flex;
-  }
-
-  .menuDesplegable {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: white;
-    padding: 1rem;
-  }
-
-  .menuDesplegable.open {
-    display: flex;
-  }
-
-  .menuDesplegable a {
-    padding: 1rem 0;
   }
 }
