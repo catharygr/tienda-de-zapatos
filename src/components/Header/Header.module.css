@@ -1,3 +1,25 @@
+@keyframes abrirMenu {
+  0% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes cerrarMenu {
+  0% {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+}
+
 .mainHeader {
   display: flex;
   flex-direction: row;
@@ -20,13 +42,6 @@
   text-decoration: none;
   text-transform: uppercase;
   color: hsl(220deg, 3%, 20%);
-  line-height: 20px;
-  font-weight: 600;
-  padding: 0 2rem;
-
-  &:first-of-type {
-    color: hsl(240deg, 60%, 63%);
-  }
 }
 
 .hamburguesa {
@@ -49,21 +64,32 @@
   top: 100%;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: hsl(220deg, 3%, 20%);
   padding: 1rem;
-  z-index: 10;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transform-origin: top;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
-.menuDesplegable.open {
+.menuDesplegable.abierto {
   display: flex;
+  animation-name: abrirMenu;
+}
+
+.menuDesplegable.cerrado {
+  display: flex;
+  animation-name: cerrarMenu;
 }
 
 .menuDesplegable a {
   padding: 1rem 0;
 }
-
 @media (max-width: 68rem) {
+  .mainHeader {
+    position: relative;
+  }
   .enlaces {
     display: none;
   }

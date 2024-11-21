@@ -1,17 +1,25 @@
 "use client";
 
+import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./Header.module.css";
 import Logo from "../Logo";
 import SuperHeader from "../SuperHeader";
 import { ESCRITORIO_LINK } from "@/constants";
-import { useState } from "react";
 
-export default function Header() {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const toggleMenu = () => {
+    if (isAnimating) return;
+
+    setIsAnimating(true);
     setIsOpen(!isOpen);
+
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 500); 
   };
 
   return (
@@ -37,17 +45,23 @@ export default function Header() {
           <div></div>
           <div></div>
         </div>
+        <nav
+          className={`${styles.menuDesplegable} ${
+            isOpen ? styles.abierto : styles.cerrado
+          }`}
+        >
+          {ESCRITORIO_LINK.map((link) => (
+            <Link
+              key={link.slug}
+              href={`/${link.href}`}
+            >
+              {link.href}
+            </Link>
+          ))}
+        </nav>
       </div>
-      <nav className={`${styles.menuDesplegable} ${isOpen ? styles.open : ""}`}>
-        {ESCRITORIO_LINK.map((link) => (
-          <Link
-            key={link.slug}
-            href={`/${link.href}`}
-          >
-            {link.href}
-          </Link>
-        ))}
-      </nav>
     </header>
   );
-}
+};
+
+export default Header;
