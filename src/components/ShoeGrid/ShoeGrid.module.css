@@ -2,3 +2,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+@media (max-width: 68rem) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    max-width: 68rem;
+    margin: 0 auto;
+  }
+}

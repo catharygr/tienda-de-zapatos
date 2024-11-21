@@ -46,3 +46,17 @@
     outline: none;
   }
 }
+
+@media (max-width: 68rem) {
+  .marketingMessage {
+    font-size: 0.8rem;
+  }
+
+  .wrapper {
+    flex-direction: row;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-size: 0.75rem;
+    height: auto;
+  }
+}
