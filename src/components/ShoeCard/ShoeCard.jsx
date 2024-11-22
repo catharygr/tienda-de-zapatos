@@ -3,14 +3,6 @@ import styles from "./ShoeCard.module.css";
 import Image from "next/image";
 import { formatPrice, isNewShoe, pluralize } from "../../utils";
 
-function SaleFlag({ children }) {
-  return <div className={styles.saleFlag}>{children}</div>;
-}
-
-function NewFlag({ children }) {
-  return <div className={styles.newFlag}>{children}</div>;
-}
-
 export default function ShoeCard({
   slug,
   name,
@@ -52,7 +44,6 @@ export default function ShoeCard({
             width={200}
             height={200}
             priority
-            style={{ width: "auto", height: "auto" }}
           />
           {variant === "on-sale" && (
             <span className={styles.saleFlag}>Sale</span>
@@ -62,18 +53,15 @@ export default function ShoeCard({
           )}
         </div>
         <div className={styles.row}>
-          <h3 className={styles.name}></h3>
-          <span className={styles.price}>{formatPrice(price)}</span>
-        </div>
-        <div
-          style={{
-            color: variant === "on-sale" ? "hsl(220deg, 5%, 40%)" : undefined,
-            "text-decoration":
-              variant === "on-sale" ? "line-through" : undefined,
-          }}
-          className={styles.row}
-        >
-          <p className={styles.colorInfo}>{pluralize("Color", numOfColors)}</p>
+          <div className={styles.contenido}>
+            <h3 className={styles.name}>{name}</h3>
+            <span className={styles.price}>{formatPrice(price)}</span>
+          </div>
+          <div>
+            <p className={styles.colorInfo}>
+              {pluralize("Color", numOfColors)}
+            </p>
+          </div>
         </div>
       </article>
     </Link>
