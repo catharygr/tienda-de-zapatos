@@ -75,3 +75,30 @@
   color: hsl(0deg, 0%, 100%);
   border-radius: 2px;
 }
+
+@media (min-width: 48rem) {
+  /* .wrapper {
+    flex-direction: row;
+  }
+
+  .row {
+    margin: 0 0 0 1rem;
+  } */
+
+  /* .name {
+    font-size: 1.25rem;
+  } */
+
+  /* .price {
+    font-size: 1.25rem;
+  } */
+
+  /* .saleFlag,
+  .newFlag {
+    top: 8px;
+    right: 8px;
+    font-size: 1rem;
+    height: 24px;
+    line-height: 24px;
+  } */
+}
