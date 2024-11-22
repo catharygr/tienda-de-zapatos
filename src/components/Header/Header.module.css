@@ -35,7 +35,6 @@
   align-items: center;
   gap: 1.8rem;
   font-size: 1.125rem;
-  color: hsl(220deg, 3%, 20%);
   font-weight: 600;
   margin: 0 auto;
 }
@@ -43,7 +42,11 @@
 .enlaces a {
   text-decoration: none;
   text-transform: uppercase;
-  color: hsl(240deg, 60%, 63%);
+  color: hsl(220deg, 3%, 20%);
+
+  &:first-of-type {
+    color: hsl(240deg, 60%, 63%);
+  }
 }
 
 .hamburguesa {
