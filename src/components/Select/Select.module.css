@@ -41,5 +41,8 @@
   pointer-events: none;
 }
 
-
-@
+@media (max-width: 24rem) {
+  .visibleLabel {
+    display: none;
+  }
+}

@@ -44,7 +44,7 @@
   }
 }
 
-@media (max-width: 23rem) {
+@media (max-width: 24rem) {
   .leftColumn {
     display: none;
   }
