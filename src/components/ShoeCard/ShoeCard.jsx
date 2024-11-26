@@ -57,10 +57,8 @@ export default function ShoeCard({
             <h3 className={styles.name}>{name}</h3>
             <span className={styles.price}>{formatPrice(price)}</span>
           </div>
-          <div>
-            <p className={styles.colorInfo}>
-              {pluralize("Color", numOfColors)}
-            </p>
+          <div className={styles.colorInfo}>
+            <p>{pluralize("Color", numOfColors)}</p>
           </div>
         </div>
       </article>
