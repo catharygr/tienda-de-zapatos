@@ -55,7 +55,9 @@ export default function ShoeCard({
         <div className={styles.row}>
           <div className={styles.contenido}>
             <h3 className={styles.name}>{name}</h3>
-            <span className={styles.price}>{formatPrice(price)}</span>
+            <span className={salePrice ? styles.salePrice : styles.price}>
+              {formatPrice(salePrice || price)}
+            </span>
           </div>
           <div className={styles.colorInfo}>
             <p>{pluralize("Color", numOfColors)}</p>

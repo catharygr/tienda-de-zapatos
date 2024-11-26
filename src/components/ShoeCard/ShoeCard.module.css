@@ -45,6 +45,11 @@
 
 .price {
   font-weight: 600;
+  color: hsl(220deg, 5%, 40%);
+}
+
+.salePrice {
+  font-weight: 600;
   color: hsl(340deg, 65%, 47%);
 }
 
