@@ -82,70 +82,48 @@
 }
 
 /* Media query para iPad */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1055px) {
   .name {
-    font-size: 1.25rem;
+    font-size: 0.8rem;
   }
 
   .colorInfo {
     margin-top: -1.5rem;
+    font-size: 0.8rem;
   }
 
   .price {
-    font-size: 1.25rem;
+    font-size: 0.8rem;
   }
 
   .salePrice {
-    font-size: 1.25rem;
+    font-size: 0.8rem;
   }
 
-  .saleFlag {
-    top: 16px;
-    right: 8px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 1rem;
-  }
-
-  .newFlag {
-    top: 16px;
-    right: 8px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 1rem;
+  .saleFlag .newFlag {
+    font-size: 0.8rem;
   }
 }
 
 @media (max-width: 768px) {
   .name {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .colorInfo {
     margin-top: -1.5rem;
+    font-size: 0.8rem;
   }
 
   .price {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .salePrice {
-    font-size: 1rem;
-  }
-
-  .saleFlag {
-    top: 16px;
-    right: 8px;
-    height: 40px;
-    line-height: 40px;
     font-size: 0.8rem;
   }
 
-  .newFlag {
-    top: 16px;
-    right: 8px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 0.8rem;
+  .saleFlag .newFlag {
+    font-size: 0.7rem;
   }
 }
