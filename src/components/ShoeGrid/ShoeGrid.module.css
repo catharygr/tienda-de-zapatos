@@ -6,6 +6,8 @@
 
 @media (max-width: 68rem) {
   .wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+    grid-template-columns: 1fr;
+    max-width: 68rem;
+    margin: 0 auto;
   }
 }
