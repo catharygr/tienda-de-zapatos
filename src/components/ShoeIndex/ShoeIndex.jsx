@@ -27,7 +27,7 @@ export default function ShoeIndex({ sortId, setSortId }) {
           <Breadcrumbs.Crumb href="/sale">Sale</Breadcrumbs.Crumb>
           <Breadcrumbs.Crumb href="/sale/shoes">Shoes</Breadcrumbs.Crumb>
         </Breadcrumbs>
-        <ShoeSidebar className={styles.sidebar} />
+        <ShoeSidebar />
       </div>
     </div>
   );
