@@ -43,13 +43,3 @@
     font-size: 1rem;
   }
 }
-
-@media (max-width: 24rem) {
-  .leftColumn {
-    display: none;
-  }
-
-  .mainColumn {
-    flex: 1 1 100%;
-  }
-}
