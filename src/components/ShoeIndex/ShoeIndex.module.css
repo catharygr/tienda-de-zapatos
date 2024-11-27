@@ -14,6 +14,7 @@
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -23,11 +24,6 @@
 .header h2 {
   font-size: 1.5rem;
   font-weight: 600;
-}
-
-.header .selectWrapper {
-  display: flex;
-  align-items: center;
 }
 
 @media (max-width: 68rem) {
@@ -72,14 +68,12 @@
 
   .header {
     justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
 
   .header h2 {
     font-size: 1.5rem;
-  }
-
-  .header .selectWrapper {
-    margin-top: 1rem;
   }
 
   .mainColumn {

@@ -8,10 +8,6 @@
   margin-right: 1rem;
 }
 
-.selectWrapper {
-  position: relative;
-}
-
 .nativeSelect {
   opacity: 0;
   position: absolute;
@@ -41,8 +37,11 @@
   pointer-events: none;
 }
 
-@media (max-width: 24rem) {
-  .visibleLabel {
-    display: none;
+/* Media para Ipad */
+@media (min-width: 768px) and (max-width: 1055px) {
+  .chevronIcon {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 9px;
   }
 }
