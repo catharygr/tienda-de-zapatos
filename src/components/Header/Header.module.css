@@ -101,7 +101,7 @@
 .menuDesplegable a {
   padding: 1rem 0;
 }
-@media (max-width: 68rem) {
+@media (max-width: 55rem) {
   .mainHeader {
     position: relative;
   }

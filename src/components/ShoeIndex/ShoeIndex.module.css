@@ -30,7 +30,7 @@
   align-items: center;
 }
 
-/* @media (max-width: 68rem) {
+@media (max-width: 68rem) {
   .wrapper {
     gap: 16px;
   }
@@ -42,12 +42,12 @@
   .header h2 {
     font-size: 1rem;
   }
-} */
+}
 
 /* Media query para iPad */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1055px) {
   .wrapper {
-    gap: 16px;
+    gap: 40px;
   }
 
   .leftColumn {
