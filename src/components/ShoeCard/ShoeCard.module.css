@@ -82,7 +82,7 @@
 }
 
 /* Media query para iPad */
-@media (max-width: 1055px) {
+@media (min-width: 768px) and (max-width: 1055px) {
   .name {
     font-size: 0.8rem;
   }
