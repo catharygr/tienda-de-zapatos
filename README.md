@@ -1,4 +1,4 @@
-### Nota: Enfocado únicamente en el diseño. Los enlaces y los campos de entrada no tendrán funcionalidad.
+### Nota: Enfocado únicamente en el diseño. Los enlaces y los campos de entrada no tienen funcionalidad.
 
 ## Ejercicio 1: Superheader
 
@@ -8,9 +8,7 @@ Se usa Flexbox para alinear correctamente los elementos dentro de src/components
 
 ## Ejercicio 2: Header
 
-Encabezado principal:
-
-Que esté perfectamente centrada dentro del contenedor. Desarrollado con Flexbox
+Encabezado principal: Desarrollado con Flexbox
 
 ## Ejercicio 3: Estructura (Shell)
 
